@@ -1,0 +1,54 @@
+body{
+
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.social-icons a{
+    display:inline-flex;
+    text-decoration:none;
+    font-size:1.5rem;
+    width:2.5rem;
+    height:2.5rem;
+
+    color:#ffffff;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    margin:0 1rem;
+    z-index:1;
+    
+}
+
+.social-icons a::before{
+     content:"";
+     position: absolute;
+     width:2.5rem;
+     height:2.5rem;
+     background:linear-gradient( 135deg,#081b83,#61e2ee,#081b83);
+     border-radius:50%;
+     z-index:-1;
+     transition:0.3s ease-in;
+    
+   
+    }
+
+    .social-icons a:hover::before{
+
+        transform:scale(0);
+    }
+
+    .social-s a i {
+        transition:0.3ease-in;
+    }
+    .social-icons a:hover i{
+
+     background:linear-gradient( 135deg,#081b83,#61e2ee,#081b83);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        transform:scale(2);
+    }
